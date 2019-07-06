@@ -9,7 +9,7 @@
 }
 
 body::after {
-  content: "";
+  content: '';
   background: url('bg.jpg');
   opacity: 0.1;
   top: 0;
@@ -20,7 +20,13 @@ body::after {
   z-index: -1;
 }
 
+a {
+  color: #ffffff;
+}
+
 nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #333333;
   color: #c0c0c0;
@@ -34,4 +40,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+img {
+  max-width: 200px;
+}
+
+.candies-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
 }
